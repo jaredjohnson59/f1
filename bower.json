@@ -1,0 +1,26 @@
+{
+  "name": "f1-infographic",
+  "description": "Infographic of stats from the current F1 season",
+  "main": "index.js",
+  "authors": [
+    "Jared Johnson <jaredjohnson59@gmail.com> (http://brightsparkprogramming.com)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-datamaps": "^0.1.2",
+    "angular-mocks": "^1.5.7"
+  },
+  "devDependencies": {
+    "angular-ui-router": "^0.3.1"
+  }
+}

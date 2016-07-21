@@ -1,0 +1,73 @@
+<div>
+<main class="container cd-main-content" >
+<h1>F1 INFOGRAPHIC</h1>
+<div class="season-winners">
+
+  <h2>Race Winners This Season</h2>
+<nvd3-pie-chart
+     id="raceWinners"
+     data="raceWinners"
+     x="xFunction()"
+     y="yFunction()"
+     showLabels="true"
+     pieLabelsOutside="false"
+     labelType="value"
+     showLegend="true">
+     <svg></svg>
+   </nvd3-pie-chart>
+</div>
+<div class="driver-standings">
+<h2>Driver Standing</h2>
+<nvd3-multi-bar-chart
+            data="raceData"
+            id="raceData"
+            showLegend="true"
+            showLabels="true"
+            showValues="true"
+            forcey="[{{chartValue}}]"
+            showYAxis="true"
+            >
+        <svg></svg>
+    </nvd3-multi-bar-chart>
+</div>
+
+</main>
+<div class="cd-panel from-right" ng-class="{true: 'is-visible', false: ''}[autoScroll]" id="driverInfo">
+  <header class="cd-panel-header">
+    <h2>{{titleName}}</h2>
+    <a href="/#/" ng-click="autoScroll = !autoScroll" class="cd-panel-close">Close</a>
+  </header>
+
+  <div class="cd-panel-container">
+    <div class="cd-panel-content">
+
+    <div class="constructorName">
+    <h3>Constructor Name</h3>
+    <p>{{constructorName}}</p>
+  </div>
+
+  <div class="currentPoints">
+    <h3>Current Points</h3>
+    <p>{{driverPoints}}</p>
+      </div>
+
+<div class="driverNumber">
+    <h3>Driver Number</h3>
+    <p>{{driverNumber}}</p>
+      </div>
+
+<div class="driverNation">
+    <h3>Driver Nationality</h3>
+    <p>{{driverNation}}</p>
+      </div>
+
+<div class="driverDOB">
+    <h3>Date of Birth</h3>
+    <p>{{dob}}</p>
+      </div>
+    </div> <!-- cd-panel-content -->
+  </div> <!-- cd-panel-container -->
+</div> <!-- cd-panel -->
+
+
+</div>

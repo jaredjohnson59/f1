@@ -1,0 +1,65 @@
+body
+{
+  background-color: #F1F0DC !important;
+  .container
+  {
+    h1
+    {
+      width:80%;
+      margin:0 auto;
+      text-align: center;
+      padding: 20px;
+      font-family: headingFont;
+      font-size: 72px;
+    }
+    .season-winners, .driver-standings, .race-tracks
+    {
+      width:50%;
+      float:left;
+      h2
+      {
+        font-family: headingFont;
+        text-align: center;
+        color: black;
+        font-size: 26px; //test
+      }
+  }
+  .race-tracks
+  {
+    clear:both;
+    width:100%;
+  }
+
+
+}
+.cd-panel
+{
+  h2
+  {
+  font-family:  headingFont;
+  margin-top:5px;
+  margin-left:10px;
+  color:black;
+  font-size: 23px;
+  }
+  .cd-panel-content
+  {
+    div
+    {
+      width:50%;
+      float:left;
+    }
+  h3
+  {
+    font-family: headingFont;
+    color: black;
+  }
+  p
+  {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+}
+}
+
+}
